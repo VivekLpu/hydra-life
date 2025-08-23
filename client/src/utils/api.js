@@ -3,7 +3,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://hydra-life-server.onrender.com",
+  baseURL: process.env.VITE_API_URL,
   withCredentials: false,
 });
 
