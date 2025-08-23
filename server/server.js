@@ -16,31 +16,35 @@ const adminRoutes = require("./routes/adminRoutes");
 const app = express();
 
 // app.use(cors());
-app.use(cors({
-  origin: "https://hydra-life-frontend.vercel.app",
-  
-  credentials: true,
-}));
-app.use(express.json());
-
-// const allowedOrigins = [
-//   "https://hydra-life-frontend.vercel.app",
-//   "https://hydralife.in",
-//   "https://www.hydralife.in",
-//   "http://localhost:3000"
-// ];
-
-
 // app.use(cors({
-//   origin: (origin, callback) => {
-//     if (!origin || allowedOrigins.includes(origin)) {
-//       callback(null, true);
-//     } else {
-//       callback(new Error("Not allowed by CORS"));
-//     }
-//   },
-//   credentials: true
+//   origin: "https://hydra-life-frontend.vercel.app",
+  
+//   credentials: true,
 // }));
+// app.use(express.json());
+
+const allowedOrigins = [
+  "https://hydra-life-frontend.vercel.app",
+  "https://hydralife.in",
+  "https://www.hydralife.in",
+  "http://localhost:3000"
+];
+
+app.use(cors({
+  origin: function(origin, callback) {
+    // allow requests with no origin (like mobile apps or Postman)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      console.warn("Blocked by CORS:", origin);
+      return callback(null, false); // don't throw error, just block silently
+    }
+  },
+  credentials: true
+}));
+
+app.use(express.json());
 
 
 // Static folder for uploaded images
