@@ -27,21 +27,16 @@ const Products = () => {
   const fetchProducts = async () => {
     try {
       const res = await API.get("/products");
-      console.log(res.data);
-
-      const productList = Array.isArray(res.data)
-        ? res.data
-        : Array.isArray(res.data.products)
-        ? res.data.products
-        : [];
+      console.log("Backend response:", res.data); // Add this line
+      const productList = Array.isArray(res.data) ? res.data : res.data.products || [];
       setProducts(productList);
     } catch (err) {
       console.log("Error getting products:", err);
-      setProducts([]);
     }
   };
   fetchProducts();
 }, []);
+
 
 
   const addToCart = (product, e) => {
