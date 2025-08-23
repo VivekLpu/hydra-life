@@ -15,32 +15,33 @@ const adminRoutes = require("./routes/adminRoutes");
 
 const app = express();
 
-// Middleware
-// app.use(cors());
-// app.use(cors({
-//   origin: "https://hydra-life-frontend.vercel.app", // allow your frontend
-//   credentials: true,
-// }));
-// app.use(express.json());
-
-const allowedOrigins = [
-  "https://hydra-life-frontend.vercel.app",
-  "https://hydralife.in",
-  "https://www.hydralife.in",
-  "http://localhost:3000"
-];
-
-
+Middleware
+app.use(cors());
 app.use(cors({
-  origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  credentials: true
+  origin: "https://hydra-life-frontend.vercel.app",
+  
+  credentials: true,
 }));
+app.use(express.json());
+
+// const allowedOrigins = [
+//   "https://hydra-life-frontend.vercel.app",
+//   "https://hydralife.in",
+//   "https://www.hydralife.in",
+//   "http://localhost:3000"
+// ];
+
+
+// app.use(cors({
+//   origin: (origin, callback) => {
+//     if (!origin || allowedOrigins.includes(origin)) {
+//       callback(null, true);
+//     } else {
+//       callback(new Error("Not allowed by CORS"));
+//     }
+//   },
+//   credentials: true
+// }));
 
 
 // Static folder for uploaded images
