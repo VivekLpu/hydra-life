@@ -1,22 +1,21 @@
 
-
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../images/homepage/logo.png";
-import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const isAdmin = localStorage.getItem("isAdmin");
-  const { cart } = useCart(); // ✅ get cart from context
+  const { cart } = useCart();
+
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleLogout = () => {
     localStorage.removeItem("isAdmin");
     navigate("/");
   };
 
-  // ✅ Calculate total items in cart
   const cartCount = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
@@ -28,36 +27,28 @@ const Navbar = () => {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
+          onClick={() => setIsOpen(!isOpen)}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-            <Link className="nav-link nav-btn" to="/"> Home </Link>
-            <Link className="nav-link nav-btn" to="/products"> Products </Link>
-            <Link className="nav-link nav-btn" to="/about"> About Us </Link>
-            <Link className="nav-link nav-btn" to="/contact"> Contact Us </Link>
-            <Link className="nav-link nav-btn" to="/track-order"> Track Order </Link>
+            <Link className="nav-link nav-btn" to="/">Home</Link>
+            <Link className="nav-link nav-btn" to="/products">Products</Link>
+            <Link className="nav-link nav-btn" to="/about">About Us</Link>
+            <Link className="nav-link nav-btn" to="/contact">Contact Us</Link>
+            <Link className="nav-link nav-btn" to="/track-order">Track Order</Link>
           </ul>
 
           <div className="d-flex">
             <Link
               to="/cart"
               className="btn btn-primary position-relative"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "80px",
-                marginRight: "10px",
-              }}
+              style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "80px", marginRight: "10px" }}
             >
               <i id="cart-icon" className="bi bi-cart" style={{ fontSize: "1.2rem" }}></i>
               <span style={{ marginLeft: "5px" }}>Cart</span>
-
-              {/* ✅ Cart Badge */}
               {cartCount > 0 && (
                 <span
                   style={{
@@ -90,5 +81,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-  
