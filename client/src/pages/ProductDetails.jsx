@@ -4,7 +4,6 @@
   import API from "../utils/api";
   import ProductReviews from "../components/ProductReviews";
   import "../styles/ProductDetails.css";
-  import { div } from "framer-motion/client";
 
   const StarsInline = ({ value = 0 }) => {
     const full = Math.round(value);
