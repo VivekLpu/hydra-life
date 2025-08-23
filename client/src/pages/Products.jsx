@@ -12,17 +12,35 @@ const Products = () => {
   const { dispatch } = useCart();
   const navigate = useNavigate();
 
+  // useEffect(() => {
+  //   const fetchProducts = async () => {
+  //     try {
+  //       const res = await API.get("/products");
+  //       setProducts(res.data);
+  //     } catch (err) {
+  //       console.log("Error getting products:", err);
+  //     }
+  //   };
+  //   fetchProducts();
+  // }, []);
   useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const res = await API.get("/products");
-        setProducts(res.data);
-      } catch (err) {
-        console.log("Error getting products:", err);
-      }
-    };
-    fetchProducts();
-  }, []);
+  const fetchProducts = async () => {
+    try {
+      const res = await API.get("/products");
+      const productList = Array.isArray(res.data)
+        ? res.data
+        : Array.isArray(res.data.products)
+        ? res.data.products
+        : [];
+      setProducts(productList);
+    } catch (err) {
+      console.log("Error getting products:", err);
+      setProducts([]);
+    }
+  };
+  fetchProducts();
+}, []);
+
 
   const addToCart = (product, e) => {
     const button = e.currentTarget;
