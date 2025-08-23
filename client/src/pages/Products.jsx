@@ -27,6 +27,8 @@ const Products = () => {
   const fetchProducts = async () => {
     try {
       const res = await API.get("/products");
+      console.log(res.data);
+
       const productList = Array.isArray(res.data)
         ? res.data
         : Array.isArray(res.data.products)
