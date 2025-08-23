@@ -25,7 +25,9 @@ const app = express();
 
 const allowedOrigins = [
   "https://hydra-life-frontend.vercel.app",
-  "https://www.hydralife.in"
+  "https://hydralife.in",
+  "https://www.hydralife.in", 
+  "http://localhost:3000" /
 ];
 
 app.use(cors({
