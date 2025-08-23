@@ -17,11 +17,28 @@ const app = express();
 
 // Middleware
 // app.use(cors());
+// app.use(cors({
+//   origin: "https://hydra-life-frontend.vercel.app", // allow your frontend
+//   credentials: true,
+// }));
+// app.use(express.json());
+
+const allowedOrigins = [
+  "https://hydra-life-frontend.vercel.app",
+  "https://www.hydralife.in"
+];
+
 app.use(cors({
-  origin: "https://hydra-life-frontend.vercel.app", // allow your frontend
-  credentials: true,
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true
 }));
-app.use(express.json());
+
 
 // Static folder for uploaded images
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
