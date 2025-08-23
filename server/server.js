@@ -16,7 +16,11 @@ const adminRoutes = require("./routes/adminRoutes");
 const app = express();
 
 // Middleware
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: "https://hydra-life-frontend.vercel.app/", // allow your frontend
+  credentials: true,
+}));
 app.use(express.json());
 
 // Static folder for uploaded images
