@@ -1,0 +1,123 @@
+/* index.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ---- Mobile Responsiveness ---- */
+
+@media (max-width: 576px) {
+  /* Navbar buttons shrink */
+  .nav-btn {
+    padding: 4px 10px !important;
+    font-size: 0.8rem;
+  }
+
+  /* Hero section */
+  .hero h1 {
+    font-size: 1.8rem !important;
+  }
+  .hero p.lead {
+    font-size: 0.9rem !important;
+  }
+  .hero .col-md-5, .hero .col-md-6 {
+    margin-bottom: 2rem;
+  }
+
+  /* Category section */
+  .category-card {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Cart/Checkout buttons */
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+
+  /* Footer */
+  .footer-wave h4, 
+  .footer-wave h5 {
+    font-size: 1rem;
+  }
+  .footer-wave .container {
+    text-align: center;
+  }
+  .footer-wave .row > div {
+    margin-bottom: 1rem;
+  }
+}
+
+
+.navbar-logo {
+  height: 80px;     /* increase or decrease as you wish */
+  object-fit: contain;
+}
+
+/* Reduce navbar height */
+.navbar {
+  height: 80px;
+  padding-top: 0.3rem ;
+  padding-bottom: 0.3rem ;
+}
+
+.glass-navbar {
+  background: rgba(97, 85, 91, 0.2) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(197, 187, 187, 0.3);
+  padding-top: 0.4rem !important;
+  padding-bottom: 0.4rem !important;
+}
+
+.glass-navbar .nav-link,
+.glass-navbar .navbar-brand {
+  color: #060d28 !important;
+  font-weight: 500;
+}
+
+/* Stylish nav buttons */
+.nav-btn {
+  padding: 6px 16px !important;
+  margin: 0 6px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff !important;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+  background: rgba(39, 36, 102, 0.35);
+  border-color: rgba(80, 200, 204, 0.6);
+  color: #000 !important;
+}
+  
+.footer-wave {
+  background: linear-gradient(135deg, #2b6cf6 0%, #4895ff 50%, #64b5ff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-wave .wave {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-size: cover;
+}
+.footer-wave ul li {
+  cursor: pointer;
+}
+
+.footer-wave ul li:hover {
+  text-decoration: underline;
+}
+

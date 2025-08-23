@@ -1,0 +1,47 @@
+.admin-dashboard {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #0d6efd; /* Hydra Blue */
+  border-bottom: 3px solid #0d6efd;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.dashboard-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-menu li {
+  margin: 15px 0;
+}
+
+.dashboard-link {
+  display: block;
+  background: linear-gradient(135deg, #0d6efd, #0a58ca);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+.dashboard-link:hover {
+  background: linear-gradient(135deg, #0a58ca, #084298);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(13, 110, 253, 0.4);
+}

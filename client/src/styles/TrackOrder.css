@@ -1,0 +1,41 @@
+.track-section {
+  background: linear-gradient(135deg, #56ccf2 0%, #2f80ed 100%);
+  min-height: 100vh;
+}
+
+.track-form {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.track-form input {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+}
+
+.track-form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-track {
+  background: #ffd700;
+  color: #2f80ed;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn-track:hover {
+  background: white;
+  color: #2f80ed;
+}
+
+.order-details {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}

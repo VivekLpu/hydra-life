@@ -1,0 +1,36 @@
+.checkout-section {
+  background: linear-gradient(135deg, #56ccf2 0%, #2f80ed 100%);
+  min-height: 100vh;
+}
+
+.checkout-card {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.checkout-card input {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+}
+
+.checkout-card input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-submit {
+  background: #fff;
+  color: #2f80ed;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #2f80ed;
+  color: white;
+  transform: scale(1.05);
+}

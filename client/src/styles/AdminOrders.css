@@ -1,0 +1,88 @@
+/* client/src/styles/AdminOrders.css */
+
+.admin-orders-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-orders-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0d6efd;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #0d6efd;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.admin-orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.admin-orders-table th,
+.admin-orders-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.admin-orders-table th {
+  background: #0d6efd;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.admin-orders-table tr:hover {
+  background: #f1f5f9;
+}
+
+.admin-orders-items div {
+  margin-bottom: 4px;
+}
+
+.admin-orders-status {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e0;
+  background: #f8f9fa;
+  color: #1a202c;
+  transition: all 0.3s ease;
+}
+
+.admin-orders-status:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+
+.admin-orders-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-orders-btn-delete {
+  background: #e53e3e;
+  color: #ffffff;
+  border: none;
+}
+
+.admin-orders-btn-delete:hover {
+  background: #c53030;
+  transform: translateY(-2px);
+}
+
+.table-responsive {
+  overflow-x: auto;
+  border-radius: 10px;
+}
