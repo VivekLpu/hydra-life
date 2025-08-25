@@ -150,7 +150,7 @@ This keeps the server alive → products load instantly without delay.
 👤 Vivek Kumar
 💼 B.Tech CSE | MERN Stack Developer
 🌐 hydralife.in
-📧 vivekkr8789@gmail.com
+📧 vivekkr8789@gmail.com 
 🔗 https://www.linkedin.com/in/vivek-kumar87/ | https://github.com/VivekLpu
 
 ⭐ Contributing
