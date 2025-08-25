@@ -1,7 +1,5 @@
 # 💧 Hydra Life – MERN Stack E-Commerce Website
 
-<img align="center" width="100" height="200" alt="image" src="https://github.com/user-attachments/assets/2e76d784-bccb-4eea-915c-b2ac8ede70a3" />
-
 
 <p align="center">
   <b>Hydra Life</b> is a full-stack <b>MERN e-commerce application</b> for selling packaged water bottles.  
