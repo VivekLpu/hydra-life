@@ -1,7 +1,7 @@
 # 💧 Hydra Life – MERN Stack E-Commerce Website
 
-![Hydra Life Banner] https://drive.google.com/file/d/1dfNbnnNPcHQvKp82TBuo2ft6t5ElejfF/view?usp=sharing
-<img width="1823" height="864" alt="image" src="https://drive.google.com/file/d/1dfNbnnNPcHQvKp82TBuo2ft6t5ElejfF/view?usp=sharing" />
+<img width="701" height="703" alt="image" src="https://github.com/user-attachments/assets/2e76d784-bccb-4eea-915c-b2ac8ede70a3" />
+
 
 <p align="center">
   <b>Hydra Life</b> is a full-stack <b>MERN e-commerce application</b> for selling packaged water bottles.  
@@ -149,9 +149,6 @@ This keeps the server alive → products load instantly without delay.
 📧 Contact
 👤 Vivek Kumar
 💼 B.Tech CSE | MERN Stack Developer
-🌐 hydralife.in
-📧 vivekkr8789@gmail.com 
-🔗 https://www.linkedin.com/in/vivek-kumar87/ | https://github.com/VivekLpu
 
 ⭐ Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss.
