@@ -1,6 +1,6 @@
 # 💧 Hydra Life – MERN Stack E-Commerce Website
 
-<img width="701" height="703" alt="image" src="https://github.com/user-attachments/assets/2e76d784-bccb-4eea-915c-b2ac8ede70a3" />
+<img width="100" height="200" alt="image" src="https://github.com/user-attachments/assets/2e76d784-bccb-4eea-915c-b2ac8ede70a3" />
 
 
 <p align="center">
