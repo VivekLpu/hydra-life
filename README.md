@@ -4,7 +4,6 @@
   <b>Hydra Life</b> is a full-stack <b>MERN e-commerce application</b> for selling packaged water bottles.  
   It includes user features like product browsing, cart, checkout, and order history, plus an admin dashboard to manage products and orders.
 </p>
----
 
 ## 🌟 Features  
 
