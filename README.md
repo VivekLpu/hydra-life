@@ -123,22 +123,6 @@ Frontend: Vercel
 Backend: Render
 Domain: Custom domain mapped → hydralife.in
 
-🔑 API Routes
-User APIs
-GET /api/products → Get products
-
-POST /api/orders → Place order
-
-Admin APIs
-POST /api/admin/login → Admin login
-
-POST /api/products → Add product
-
-DELETE /api/products/:id → Delete product
-
-GET /api/orders → View all orders
-
-PATCH /api/orders/:id → Update order status
 
 Utility
 GET /health → Health check endpoint (used for UptimeRobot keep-alive)
