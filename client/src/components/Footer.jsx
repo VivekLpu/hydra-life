@@ -79,8 +79,8 @@ const Footer = () => {
             <p className="small mb-0">hydralifebeveragespvtltd@gmail.com</p>
             <p className="small mb-0">+91 9693306678 </p>
             <p className="small mb-0">
-              Hydra Life Pvt Ltd, Near Surya Mandir <br />
-              Garkha, Saran, Bihar - 841311
+               SUDHARI BEVERAGES PVT. LTD. <br />
+              102, Hariharpur, Saran, Bihar 841222  
             </p>
             <a
               href="https://viveklpu.github.io/Portfolio-Website/"
