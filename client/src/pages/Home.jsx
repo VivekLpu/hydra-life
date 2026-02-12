@@ -359,7 +359,7 @@ const Home = () => {
         <p className="lead">Years of Excellence</p>
       </div>
       <div className="col-md-3 mb-4">
-        <Counter end={5000} duration={2000} />
+        <Counter end={50000} duration={2000} />
         <p className="lead">Happy Customers</p>
       </div>
       <div className="col-md-3 mb-4">
