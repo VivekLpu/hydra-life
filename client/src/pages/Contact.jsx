@@ -138,8 +138,8 @@ const Contact = () => {
               <h4 className="fw-bold mb-3">Get in Touch</h4>
               <p><FaEnvelope className="me-2" /> hydralifebeveragespvtltd@gmail.com</p>
               <p><FaPhone className="me-2" /> +91 96933 06678</p>
-              <p><FaMapMarkerAlt className="me-2" /> Hydra Life Pvt Ltd Near Surya Mandir <br/>
-              Garkha, Saran, Bihar - 841311</p>
+              <p><FaMapMarkerAlt className="me-2" /> SUDHARI BEVERAGES PVT. LTD. <br/>
+              102, Hariharpur, Saran, Bihar 841222</p>
               <div className="social-icons mt-3">
                 <a href="https://wa.me/+919693306678" target="_blank" rel="noreferrer"><FaWhatsapp /></a>
                 <a href="https://www.instagram.com/hydralife_beverages_pvt.ltd" target="_blank" rel="noreferrer"><FaInstagram /></a>
