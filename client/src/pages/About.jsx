@@ -109,7 +109,7 @@ const About = () => {
             {/* Founder */}
             <img src={CEO} alt="Founder" className="about-img" />
             <div className="fs-5 text-secondary mb-3">
-              <strong className="name">Sudhanshu Kumar</strong>
+              <strong className="name">Mr. Sudhanshu Kumar</strong>
               <br />
               Founder & CEO
             </div>
@@ -128,7 +128,7 @@ const About = () => {
             {/* Co-Founder */}
             <img src={CoFounder} alt="Co-Founder" className="about-img" />
             <div className="fs-5 text-secondary">
-              <strong className="name">ShreeHari</strong>
+              <strong className="name">Mr. Kishan Chauhan</strong>
               <br />
               Co-Founder
             </div>
