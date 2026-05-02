@@ -83,7 +83,7 @@ const Footer = () => {
               102, Hariharpur, Saran, Bihar 841222  
             </p>
             <a
-              href="https://viveklpu.github.io/Portfolio-Website/"
+              href="https://www.vivek-singh.co.in"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline-light btn-sm"
